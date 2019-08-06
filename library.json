@@ -1,0 +1,32 @@
+{  
+   "name":"TLI4971-Current-Sensor",
+   "keywords":"current, hall, sensor, magnetic, sensor2go, TLI4971",
+   "description":"This library provides an Interface for Infineon's TLI4971 Current Sensor",
+   "repository":{  
+      "type":"git",
+      "url":"https://github.com/Infineon/TLI4971-Current-Sensor.git",
+      "branch":"master"
+   },
+   "authors":
+   {
+     "name": "Infineon Technologies AG",
+     "url": "https://www.infineon.com/cms/en/product/sensor/magnetic-current-sensor/"
+   },
+   "examples":
+   [
+     "examples/*/*.ino"
+   ],
+   "export": {
+     "include":
+     [
+         "src/util/*.h"
+     ]
+   },
+   "version":"1.0.0",
+   "license":"MIT",
+   "frameworks":"arduino",
+   "platforms":[  
+      "infineonxmc",
+      "atmelavr"
+   ]
+}
