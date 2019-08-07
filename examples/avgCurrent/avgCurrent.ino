@@ -1,8 +1,11 @@
 #include <TLI4971.h>
 
-TLI4971 CurrentSensor = TLI4971(A0, A1, 9, 5, 2, 10, 20);   //Bootkit
-//TLI4971 CurrentSensor = TLI4971(A0, A1, 5, 8, 9, 3, 4, false);   //XMC2Go
-  
+#if defined(XMC1100_XMC2GO) 
+  TLI4971 CurrentSensor = TLI4971(A0, A1, 5, 8, 9, 3, 4, false);   //XMC2Go
+#elif defined(XMC1100_Boot_Kit) || defined(XMC4700_Relax_Kit)  /**< MyIoT Adapter Socket 1 */
+  TLI4971 CurrentSensor = TLI4971(A0, A1, 9, 5, 2, 10, 20, false);     
+#endif
+
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(1000000);
