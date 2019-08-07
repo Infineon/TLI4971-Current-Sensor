@@ -12,6 +12,7 @@
 #include <stdlib.h>
 #include <Arduino.h>
 #include "TLI4971.h"
+#include "util/SICI.h"
 
 /**
  * @addtogroup tlx4966wrap 
@@ -32,7 +33,7 @@
  * 
  * @return          void         
  */
-TLI4971::TLI4971(int aout, int vref, int pwr, int sici, int ocd1, int ocd2, int mux, bool xmc5V = true)
+TLI4971::TLI4971(int aout, int vref, int pwr, int sici, int ocd1, int ocd2, int mux, bool xmc5V)
 {
   ocd1Pin = ocd1;
   ocd2Pin = ocd2;
@@ -145,7 +146,7 @@ bool TLI4971::reset()
 void TLI4971::end()
 {
   digitalWrite(pwrPin, HIGH);
-  return true;
+  //return true;
 }
 
 /*
@@ -413,7 +414,8 @@ bool TLI4971::setOpMode(int operatingMode)
   if(sendConfig())
   {
     opMode = operatingMode;
-    digitalWrite(muxPin, opMode != SE); //if opMode == SE, set muxPin Low in order to activate ext. VDD/2 at sensor's Vref
+    if(opMode == SE)
+      digitalWrite(muxPin, LOW); //if opMode == SE, set muxPin Low in order to activate ext. VDD/2 at sensor's Vref
     return true;
   }
   configRegs[0] = configBackup;
@@ -431,7 +433,7 @@ bool TLI4971::setOpMode(int operatingMode)
  * @retval      true if configuration succeeded
  * @retval      false if configuration failed
  */
-bool TLI4971::configOcd1(bool enable, int threshold = THR1_1, int deglitchTime = D0)
+bool TLI4971::configOcd1(bool enable, int threshold, int deglitchTime)
 {
   if(enable)
   {
@@ -483,7 +485,7 @@ bool TLI4971::configOcd1(bool enable, int threshold = THR1_1, int deglitchTime =
  * @retval      true if configuration succeeded
  * @retval      false if configuration failed
  */
-bool TLI4971::configOcd2(bool enable, int threshold = THR2_1, int deglitchTime = D0)
+bool TLI4971::configOcd2(bool enable, int threshold, int deglitchTime)
 {
   if(enable)
   {

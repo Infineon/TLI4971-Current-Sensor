@@ -1,4 +1,4 @@
-#include "TLI4971.h"
+#include <TLI4971.h>
 
 TLI4971 CurrentSensor = TLI4971(A0, A1, 9, 5, 2, 10, 20);   //Bootkit
 //TLI4971 CurrentSensor = TLI4971(A0, A1, 5, 8, 9, 3, 4, false);   //XMC2Go
