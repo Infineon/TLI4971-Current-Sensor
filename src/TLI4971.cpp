@@ -14,10 +14,23 @@
 #include "TLI4971.h"
 #include "util/SICI.h"
 
-/**
- * @addtogroup tlx4966wrap 
- * @{
- */
+
+
+#define mapThrS1(thr) (thr<8)?0x16+thr*3+(int)(thr*0.25):0x10+(thr-8)*5-(int)((thr-8)*0.25)
+#define mapThrS2(thr) (thr<8)?0x11+thr*3-(int)(thr/3):0x0D+(thr-8)*4-(int)((thr-8)/6)
+#define mapThrS3(thr) (thr<8)?0xB+thr*2:0x08+(thr-8)*3
+#define mapThrS4(thr) (thr<8)?0x17+thr*3+(int)((thr+1)/3):0x11+(thr-8)*5
+#define mapThrS5(thr) (thr<8)?0x10+thr*2+(int)(thr*0.5):0xB+(thr-8)*4-(int)((thr-8)*0.25)
+#define mapThrS6(thr) (thr<8)?0x9+thr+(int)(thr*0.5)+(int)(thr>2 && thr%2):0x06+(thr-8)*2+(int)((thr-8)*0.5)
+
+#define NO_HYST_THR -1
+#define mapHystThrS1(thr) (thr<8)?0x5+thr-(int)((thr+2)/3):0x4+(thr-8)-(int)((thr-8)*0.25)
+#define mapHystThrS2(thr) (thr<8)?0x4+thr-(int)(thr/3)-(int)((thr+7)/8):0x3+(thr-8)-(int)((thr-7)/4)
+#define mapHystThrS3(thr) (thr<8)?0x3+(thr>=3)+(thr>=5):0x2+(thr-8)-(int)((thr-8)/2)+int((thr-8)/6)-((thr-8)>6)
+#define mapHystThrS4(thr) (thr<8)?0x5+thr-(int)((thr+1)/3):0x4+(thr-8)
+#define mapHystThrS5(thr) (thr<8)?0x4+thr-(int)((thr+1)/2):0x3+(thr-8)-(int)((thr-5)/4)
+#define mapHystThrS6(thr) (thr<8)?0x2+(int)((thr+1)/3):0x2+(int)((thr-8)/2)
+
 
 /**
  * @brief           Current sensor instance constructor
@@ -643,5 +656,3 @@ bool TLI4971::sendConfig()
   
   return true;
 }
-
-/** @} */

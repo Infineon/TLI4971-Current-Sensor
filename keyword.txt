@@ -1,0 +1,94 @@
+#######################################
+# Syntax Coloring Map For TLI4971
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin   KEYWORD2
+
+reset    KEYWORD2
+end  KEYWORD2
+read     KEYWORD2
+ocdPolling   KEYWORD2
+
+configAdc    KEYWORD2
+
+getLastSwOcdCurrent  KEYWORD2
+
+registerOcd1Function     KEYWORD2
+registerOcd2Function     KEYWORD2
+registerSwOcdFunction    KEYWORD2
+
+setMeasRange     KEYWORD2
+setOpMode    KEYWORD2
+configOcd1   KEYWORD2
+configOcd2   KEYWORD2
+setOcdCompHyst   KEYWORD2
+setSwOcdCompHyst     KEYWORD2
+setVrefExt   KEYWORD2
+
+getOcd1State  KEYWORD2
+getOcd2State  KEYWORD2
+getSwOcdState  KEYWORD2
+
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+TLI4971    KEYWORD1
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+NONE    LITERAL1
+INTERRUPT   LITERAL1
+POLLING LITERAL1
+SD_BID  LITERAL1
+FD  LITERAL1
+SD_UNI  LITERAL1
+SE  LITERAL1
+D0  LITERAL1
+D1  LITERAL1
+D2  LITERAL1
+D3  LITERAL1
+D4  LITERAL1
+D5  LITERAL1
+D6  LITERAL1
+D7  LITERAL1
+D8  LITERAL1
+D9  LITERAL1
+D10 LITERAL1
+D11 LITERAL1
+D12 LITERAL1
+D13 LITERAL1
+D14 LITERAL1
+D15 LITERAL1
+THR1_1  LITERAL1
+THR1_2  LITERAL1
+THR1_3  LITERAL1
+THR1_4  LITERAL1
+THR1_5  LITERAL1
+THR1_6  LITERAL1
+THR1_7  LITERAL1
+THR1_8  LITERAL1
+THR2_1  LITERAL1
+THR2_2  LITERAL1
+THR2_3  LITERAL1
+THR2_4  LITERAL1
+THR2_5  LITERAL1
+THR2_6  LITERAL1
+THR2_7  LITERAL1
+THR2_8  LITERAL1
+V1_65   LITERAL1
+V1_2    LITERAL1
+V1_5    LITERAL1
+V1_8    LITERAL1
+V2_5    LITERAL1
