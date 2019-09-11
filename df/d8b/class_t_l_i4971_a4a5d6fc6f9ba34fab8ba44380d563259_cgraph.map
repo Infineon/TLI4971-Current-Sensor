@@ -1,0 +1,9 @@
+<map id="TLI4971::reset" name="TLI4971::reset">
+<area shape="rect" id="node1" title="Resets sensor to factory settings." alt="" coords="5,56,109,83"/>
+<area shape="rect" id="node2" href="$df/d8b/class_t_l_i4971.html#a489c0e1c2223a25091b42b034075aa60" title="Ends sensor library Turn off sensor supply." alt="" coords="163,31,259,57"/>
+<area shape="rect" id="node3" href="$df/d8b/class_t_l_i4971.html#a58bb7aafe8e5e69fb632e2311cd1ed8f" title="Turn on sensor supply, initialy reads sensor configuration and checks if sensor can be configurated." alt="" coords="157,81,264,108"/>
+<area shape="rect" id="node4" href="$d5/d39/classtli4971_1_1_sici.html#ae52c1ab3bd332ee441f42d3c5ed40498" title=" " alt="" coords="337,5,466,32"/>
+<area shape="rect" id="node5" href="$d5/d39/classtli4971_1_1_sici.html#a2fe282c7ca4c2c384eed97c8cb24ddff" title=" " alt="" coords="312,56,491,83"/>
+<area shape="rect" id="node6" href="$d5/d39/classtli4971_1_1_sici.html#a611fc7d6a532b66bc62a2c0d396c8f64" title=" " alt="" coords="342,107,461,133"/>
+<area shape="rect" id="node7" href="$d5/d39/classtli4971_1_1_sici.html#af9fba059a9f5df9dc4ce2db57d4d473a" title=" " alt="" coords="324,157,479,184"/>
+</map>

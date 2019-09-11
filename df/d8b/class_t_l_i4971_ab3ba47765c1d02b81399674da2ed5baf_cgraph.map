@@ -1,0 +1,4 @@
+<map id="TLI4971::ocdPolling" name="TLI4971::ocdPolling">
+<area shape="rect" id="node1" title="If polling is used as OCD mode this function will perform the polling. Needs to be called repeatedly,..." alt="" coords="5,5,140,32"/>
+<area shape="rect" id="node2" href="$df/d8b/class_t_l_i4971.html#a272c5ecf2685e1d565ccb846346f6a02" title="Reads sensor outputs and calculates current value. If Software OCD is used, this function can trigger..." alt="" coords="188,5,288,32"/>
+</map>
