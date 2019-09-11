@@ -42,7 +42,7 @@
  * @param[in]       ocd1  pin for over-current detection 1 signal of sensor
  * @param[in]       ocd2  pin for over-current detection 2 signal of sensor
  * @param[in]       mux   pin connected to analog mulitplexer on Shield2Go
- * @param[in]       xmc5V states whether microcontroller is a 5V or 3V3 device (needed for calculation)
+ * @param[in]       mc5V states whether microcontroller is a 5V or 3V3 device (needed for calculation)
  * 
  * @return          void         
  */
@@ -81,7 +81,7 @@ TLI4971::~TLI4971(void)
   configAdc(ll5V, 8);
 }
 
-/*
+/**
  * @brief     Turn on sensor supply, initialy reads sensor configuration and checks if sensor can be configurated
  * 
  * @return    bool 
@@ -137,7 +137,7 @@ bool TLI4971::begin(void)
   return true;
 }
 
-/*
+/**
  * @brief     Resets sensor to factory settings.
  * 
  * @return    bool
@@ -150,7 +150,7 @@ bool TLI4971::reset()
   return begin();
 }
 
-/*
+/**
  * @brief   Ends sensor library
  *          Turn off sensor supply
  *          
@@ -162,7 +162,7 @@ void TLI4971::end()
   //return true;
 }
 
-/*
+/**
  * @brief   Reads sensor outputs and calculates current value. If Software OCD is used, this function can trigger the handler.
  * 
  * @return  double
@@ -189,7 +189,7 @@ double TLI4971::read()
   return val;
 }
 
-/*
+/**
  * @brief   Reads state of ocd1-pin from sensor.
  * 
  * @return  bool 
@@ -201,7 +201,7 @@ bool TLI4971::getOcd1State()
   return !digitalRead(ocd1Pin);
 }
 
-/*
+/**
  * @brief   Reads state of ocd2-pin from sensor.
  * 
  * @return  bool 
@@ -213,7 +213,7 @@ bool TLI4971::getOcd2State()
   return !digitalRead(ocd2Pin);
 }
 
-/*
+/**
  * @brief   Get state of Software OCD.
  * 
  * @return  bool
@@ -225,7 +225,7 @@ bool TLI4971::getSwOcdState()
   return swOcdTriggered;
 }
 
-/*
+/**
  * @brief       Configurate ADC.
  * 
  * @param[in]   logicLevel5V    true for 5V microcontrollers, false for 3.3V microcontrollers
@@ -245,7 +245,7 @@ void TLI4971::configAdc(bool logicLevel5V, int adcResolution = -1)
 #endif
 }
 
-/*
+/**
  * @brief   If polling is used as OCD mode this function will perform the polling.
  *          Needs to be called repeatedly, e.g. in loop. Handler functions for OCD-signals will be called by this method.
  *          SW-OCD will be detected as well, if in use.
@@ -278,7 +278,7 @@ void TLI4971::ocdPolling()
   }
 }
 
-/*
+/**
  * @brief       Set Hysteresis value for SW-OCD. Signal will be reset when current < threshold - hysteresis
  * 
  * @param[in]   hysteresis  value in Ampere to be set as Hysteresis.
@@ -296,7 +296,7 @@ bool TLI4971::setSwOcdCompHyst(double hysteresis)
   return true;
 }
 
-/*
+/**
  * @brief   As soon as a Software OCD is triggered, the current value (> threshold) is stored. This function returns it.
  * 
  * @return  double 
@@ -307,7 +307,7 @@ double TLI4971::getLastSwOcdCurrent()
   return lastSwOcdValue;
 }
 
-/*
+/**
  * @brief       Register a handler, which shall be called when the sensor triggeres OCD1.
  * 
  * @param[in]   mode    INTERRUPT if hardware interrupt is available at the microcontroller for this pin.
@@ -336,7 +336,7 @@ bool TLI4971::registerOcd1Function(int mode, void (*func)(void))
   return true;
 }
 
-/*
+/**
  * @brief       Register a handler which shall be called when the sensor triggeres OCD2.
  * 
  * @param[in]   mode    INTERRUPT if hardware interrupt is available at the microcontroller for this pin.
@@ -365,7 +365,7 @@ bool TLI4971::registerOcd2Function(int mode, void (*func)(void))
   return true;
 }
 
-/*
+/**
  * @brief       Register a handler, which shall be called when the sensor value exceeds a certain threshold.
  * 
  * @param[in]   currentLevel    threshold in Ampere
@@ -382,7 +382,7 @@ bool TLI4971::registerSwOcdFunction(double currentLevel, void (*func)(void))
   return true;
 }
 
-/*
+/**
  * @brief       Sets the measurement Range of the sensor (refer to Programming Guide).
  * 
  * @param[in]   measuringRange    Range of Current measurement. Possible values are:
@@ -411,7 +411,7 @@ bool TLI4971::setMeasRange(int measuringRange)
   return false;
 }
 
-/*
+/**
  * @brief       Set operating mode of the sensor (refer to Programming guide).
  * 
  * @param[in]   operatingMode   Mode of sensor operation. Changes the behaviour of AOut and Vref dependent of the measured current. Possible modes are:
@@ -440,7 +440,7 @@ bool TLI4971::setOpMode(int operatingMode)
   return false;
 }
 
-/*
+/**
  * @brief       Configuration of OCD1.
  * 
  * @param[in]   enable          true to enable OCD1 signal, false to disable.
@@ -492,7 +492,7 @@ bool TLI4971::configOcd1(bool enable, int threshold, int deglitchTime)
   return false;
 }
 
-/*
+/**
  * @brief       Configuration of OCD2.
  * 
  * @param[in]   enable        true to enable OCD2 signal, false to disable.
@@ -544,7 +544,7 @@ bool TLI4971::configOcd2(bool enable, int threshold, int deglitchTime)
   return false;
 }
 
-/*
+/**
  * @brief       Sets the OCD hysteresis. OCD signals will reset if current < 20% of the provided threshold.
  * 
  * @param[in]   threshold   20% of this Threshold are set as hysteresis for both OCD signals. Range: [THR1_1 - THR2_8]
@@ -585,7 +585,7 @@ bool TLI4971::setOcdCompHyst(int threshold)
   return false;
 }
 
-/*
+/**
  * @brief       Sets the reference voltage level. This can be used for Single Ended mode (setting needs to match external reference voltage), as well as Semi-differential Uni-directional mode (sensor will output this voltage at vRef).
  * 
  * @param[in]   vrefExtVoltage    Voltage level to set at vRef. Possible levels:
@@ -615,7 +615,7 @@ bool TLI4971::setVrefExt(int vrefExtVoltage)
   return false;
 }
 
-/*
+/**
  * @brief     Sends the configuration to the sensor.
  *                                
  * @return    bool

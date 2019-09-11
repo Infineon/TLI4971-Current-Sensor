@@ -1,7 +1,7 @@
 /**
  * SICI.h - Part of the library for Arduino to control the TLI4970-D050T4 current sensor.
  *
- * TLI4970 is a high-precision current sensor based on Infineon´s proven Hall technology. 
+ * TLI4971 is a high-precision current sensor based on Infineon´s proven Hall technology. 
  * The coreless concept significantly reduces footprint compared with existing solutions. 
  * TLI4970 is an easy-to-use, fully digital solution that does not require external calibration 
  * or additional parts such as A/D converters, 0 pAmps or reference voltage. 
