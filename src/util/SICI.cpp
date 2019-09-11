@@ -51,14 +51,19 @@ tli4971::Sici::Sici(uint8_t pin, uint8_t pwrPin)
 
 void tli4971::Sici::begin(void)
 {
+  #if defined(XMC1100_XMC2GO) || defined(XMC1100_Boot_Kit) || defined(XMC4700_Relax_Kit)
 	onewire::Timing_t timingTLI4971 = { 40, 80, 60, 120, 6000 };
 	mInterface = new OneWire(mPin, &timingTLI4971);
+  #else
+	mInterface = new OneWire(mPin);
+  #endif
 	mActive = true;
 }
 
 void tli4971::Sici::end(void)
 {
 	digitalWrite(mPin, LOW);
+	delay(6);	//End SICI communication
 	pinMode(mPin, INPUT);
 	delete mInterface;
 	mInterface = nullptr;

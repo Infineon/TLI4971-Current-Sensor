@@ -2,7 +2,7 @@
 
 #if defined(XMC1100_XMC2GO) 
   TLI4971 CurrentSensor = TLI4971(A0, A1, 5, 8, 9, 3, 4, false);   //XMC2Go
-#elif defined(XMC1100_Boot_Kit) || defined(XMC4700_Relax_Kit)  /**< MyIoT Adapter Socket 1 */
+#elif defined(XMC1100_Boot_Kit) || defined(XMC4700_Relax_Kit) || defined(__AVR_ATmega328P__) /**< MyIoT Adapter Socket 1 */
   TLI4971 CurrentSensor = TLI4971(A0, A1, 9, 5, 2, 10, 20, false);     
 #endif
 

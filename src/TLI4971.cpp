@@ -46,7 +46,7 @@
  * 
  * @return          void         
  */
-TLI4971::TLI4971(int aout, int vref, int pwr, int sici, int ocd1, int ocd2, int mux, bool xmc5V)
+TLI4971::TLI4971(int aout, int vref, int pwr, int sici, int ocd1, int ocd2, int mux, bool mc5V = true)
 {
   ocd1Pin = ocd1;
   ocd2Pin = ocd2;
@@ -64,7 +64,7 @@ TLI4971::TLI4971(int aout, int vref, int pwr, int sici, int ocd1, int ocd2, int 
   pinMode(muxPin, OUTPUT);
   digitalWrite(muxPin, HIGH);
 
-  configAdc(xmc5V, adcResol);
+  configAdc(mc5V, adcResol);
 }
 
 /**
@@ -233,11 +233,16 @@ bool TLI4971::getSwOcdState()
  * 
  * @return      void
  */
-void TLI4971::configAdc(bool logicLevel5V, int adcResolution)
+void TLI4971::configAdc(bool logicLevel5V, int adcResolution = -1)
 {
   ll5V = logicLevel5V;
-  adcResol = adcResolution;
-  analogReadResolution(adcResol);
+#ifdef ADC_RESOLUTION || ADC_MAX_READ_RESOLUTION
+  if(adcResolution > 0)
+  {
+	  adcResol = adcResolution;
+	  analogReadResolution(adcResol);
+  }
+#endif
 }
 
 /*
@@ -427,8 +432,8 @@ bool TLI4971::setOpMode(int operatingMode)
   if(sendConfig())
   {
     opMode = operatingMode;
-    if(opMode == SE)
-      digitalWrite(muxPin, LOW); //if opMode == SE, set muxPin Low in order to activate ext. VDD/2 at sensor's Vref
+    if(opMode == S_ENDED)
+      digitalWrite(muxPin, LOW); //if opMode == S_ENDED, set muxPin Low in order to activate ext. VDD/2 at sensor's Vref
     return true;
   }
   configRegs[0] = configBackup;
