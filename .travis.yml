@@ -12,6 +12,7 @@ env:
         - PLATFORMIO_CI_SRC=examples/avgCurrent
 
 install:
+    - pip install --upgrade pip
     - pip install -U platformio
     - platformio platform install -f infineonxmc 
     - platformio platform install -f atmelavr
