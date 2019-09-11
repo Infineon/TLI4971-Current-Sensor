@@ -128,7 +128,7 @@ Then we simply need to install the library to use it in your project:
 
 1. **Install the library**. Download this library as a .zip file (get the latest release version [here]()). Install the library in the Arduino IDE in the menu *Sketch > Include Library > Add .ZIP library*.
 
-2. **Include it in your sketch**. With the library installed in the Arduino IDE, you can include it from the menu "Sketch > Include Library > TLI4071-Current-Sensor". The header ``` #include <TLx4966-ino.h> ``` will be added to your sketch. You can also open and test one of the examples provided in  *File > Examples > TLI4971-Current-Sensor* (find an example in the [Demo Application Example](#demo-ex) section).
+2. **Include it in your sketch**. With the library installed in the Arduino IDE, you can include it from the menu "Sketch > Include Library > TLI4071-Current-Sensor". The header ``` #include <TLI4971.h> ``` will be added to your sketch. You can also open and test one of the examples provided in  *File > Examples > TLI4971-Current-Sensor* (find an example in the [Demo Application Example](#demo-ex) section).
 
 ### PlatformIO 
 
