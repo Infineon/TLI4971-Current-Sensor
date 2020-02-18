@@ -23,7 +23,7 @@ install:
     - platformio platform install -f atmelavr@2.0.0
 
 script:
-    - platformio ci --lib="." --board=xmc1100_xmc2go --board=xmc1100_boot_kit --board=xmc4700_relax_kit --boards=uno --project-option="lib_deps=OneWire" 
+    - platformio ci --lib="." --board=xmc1100_xmc2go --board=xmc1100_boot_kit --board=xmc4700_relax_kit --board=uno --project-option="lib_deps=OneWire" 
 
 jobs:
   include:   
