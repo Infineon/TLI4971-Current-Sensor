@@ -6,8 +6,7 @@ var indexSectionsWithContent =
   3: "st",
   4: "bcegorst~",
   5: "mov",
-  6: "dfinpstv",
-  7: "emnt"
+  6: "dfinpstv"
 };
 
 var indexSectionNames =
@@ -18,8 +17,7 @@ var indexSectionNames =
   3: "files",
   4: "functions",
   5: "enums",
-  6: "enumvalues",
-  7: "defines"
+  6: "enumvalues"
 };
 
 var indexSectionLabels =
@@ -30,7 +28,6 @@ var indexSectionLabels =
   3: "Files",
   4: "Functions",
   5: "Enumerations",
-  6: "Enumerator",
-  7: "Macros"
+  6: "Enumerator"
 };
 

@@ -1,0 +1,87 @@
+var classTLI4971 =
+[
+    [ "OCDMODE", "d1/dc2/classTLI4971.html#a9399ff2b17943fb58f674c96f25e42c5", [
+      [ "NONE", "d1/dc2/classTLI4971.html#a9399ff2b17943fb58f674c96f25e42c5abec41cef9b6d2e3d1e3ff5b644ba7785", null ],
+      [ "INTERRUPT", "d1/dc2/classTLI4971.html#a9399ff2b17943fb58f674c96f25e42c5ae2f1b048de31cc70dad6a7cf92b8ae99", null ],
+      [ "POLLING", "d1/dc2/classTLI4971.html#a9399ff2b17943fb58f674c96f25e42c5a177371214d2775c7f653ba59f1bd6ff5", null ]
+    ] ],
+    [ "MEASRANGE", "d1/dc2/classTLI4971.html#a5e63b7259edaa852dfcaeaa0730de14d", [
+      [ "FSR120", "d1/dc2/classTLI4971.html#a5e63b7259edaa852dfcaeaa0730de14da9c8e55777a857897ca9955605b1f450b", null ],
+      [ "FSR100", "d1/dc2/classTLI4971.html#a5e63b7259edaa852dfcaeaa0730de14da46ef36e91dcf10e9889f766885074dac", null ],
+      [ "FSR75", "d1/dc2/classTLI4971.html#a5e63b7259edaa852dfcaeaa0730de14da0b6476bd7b219a812db7ff2fba346701", null ],
+      [ "FSR50", "d1/dc2/classTLI4971.html#a5e63b7259edaa852dfcaeaa0730de14daf510016eed1b62713b8d05565837490a", null ],
+      [ "FSR37_5", "d1/dc2/classTLI4971.html#a5e63b7259edaa852dfcaeaa0730de14daa3ee9a62b501743aaaa608582745f796", null ],
+      [ "FSR25", "d1/dc2/classTLI4971.html#a5e63b7259edaa852dfcaeaa0730de14da49aedd1aed5dc2cfc08c097d0e0e0842", null ]
+    ] ],
+    [ "OPMODE", "d1/dc2/classTLI4971.html#a42be5f9bff43d7953433ccbe90e4c0c1", [
+      [ "SD_BID", "d1/dc2/classTLI4971.html#a42be5f9bff43d7953433ccbe90e4c0c1af67b37a0e6e183d3719823e74c2ff359", null ],
+      [ "FD", "d1/dc2/classTLI4971.html#a42be5f9bff43d7953433ccbe90e4c0c1afcce0a221460faa45025504cb56afd4e", null ],
+      [ "SD_UNI", "d1/dc2/classTLI4971.html#a42be5f9bff43d7953433ccbe90e4c0c1add06e039b66bdacb1a775c8f7c674d6b", null ],
+      [ "S_ENDED", "d1/dc2/classTLI4971.html#a42be5f9bff43d7953433ccbe90e4c0c1a4ab2c5e9b099961951a05b9df55b5f08", null ]
+    ] ],
+    [ "OCDDEGLITCH", "d1/dc2/classTLI4971.html#a2b97e5018bd398a0d283134575598bdb", [
+      [ "D0", "d1/dc2/classTLI4971.html#a2b97e5018bd398a0d283134575598bdbae53a04612f6dfe6c1f9eee0129b6bdd8", null ],
+      [ "D1", "d1/dc2/classTLI4971.html#a2b97e5018bd398a0d283134575598bdba2e3c67563e3b53e7eab414308d648b62", null ],
+      [ "D2", "d1/dc2/classTLI4971.html#a2b97e5018bd398a0d283134575598bdba378d85cc8b9a3f0a470a4ade9fcc38bd", null ],
+      [ "D3", "d1/dc2/classTLI4971.html#a2b97e5018bd398a0d283134575598bdba44baa73326d69c91e51f2e5c509e16b6", null ],
+      [ "D4", "d1/dc2/classTLI4971.html#a2b97e5018bd398a0d283134575598bdba714f0ac95ba476ec158c3d3bf302acf8", null ],
+      [ "D5", "d1/dc2/classTLI4971.html#a2b97e5018bd398a0d283134575598bdbaf748948964a12843c1ea27e0d5998ad0", null ],
+      [ "D6", "d1/dc2/classTLI4971.html#a2b97e5018bd398a0d283134575598bdba1c715960859b1e3126f133524a06a918", null ],
+      [ "D7", "d1/dc2/classTLI4971.html#a2b97e5018bd398a0d283134575598bdba5d83d65c925aa305e19521822dd0cb54", null ],
+      [ "D8", "d1/dc2/classTLI4971.html#a2b97e5018bd398a0d283134575598bdbac368a29017937e37ba14430767ba4bfe", null ],
+      [ "D9", "d1/dc2/classTLI4971.html#a2b97e5018bd398a0d283134575598bdbae20586b608909b3697d67ebcfef0b9d2", null ],
+      [ "D10", "d1/dc2/classTLI4971.html#a2b97e5018bd398a0d283134575598bdba634a839220282af35674424010cccebe", null ],
+      [ "D11", "d1/dc2/classTLI4971.html#a2b97e5018bd398a0d283134575598bdbaf32890dd81193aaf8ca73a46ae0c029c", null ],
+      [ "D12", "d1/dc2/classTLI4971.html#a2b97e5018bd398a0d283134575598bdbae1c2f915206c20bf7dcb182ce18d56c2", null ],
+      [ "D13", "d1/dc2/classTLI4971.html#a2b97e5018bd398a0d283134575598bdbac1ddb7958ce416605d8469d0f29defc9", null ],
+      [ "D14", "d1/dc2/classTLI4971.html#a2b97e5018bd398a0d283134575598bdbaf6369f818b918a4e9cb8270ca8e6dd74", null ],
+      [ "D15", "d1/dc2/classTLI4971.html#a2b97e5018bd398a0d283134575598bdbab810b908adad2a6b890eb852066a3d04", null ]
+    ] ],
+    [ "OCDTHR", "d1/dc2/classTLI4971.html#ac71b90f6450e46638e259666a9fbf762", [
+      [ "THR1_1", "d1/dc2/classTLI4971.html#ac71b90f6450e46638e259666a9fbf762aa902c35c4a2916e41e1ab3bc85355329", null ],
+      [ "THR1_2", "d1/dc2/classTLI4971.html#ac71b90f6450e46638e259666a9fbf762a951468808a1cc452fb259a3e0e4499a8", null ],
+      [ "THR1_3", "d1/dc2/classTLI4971.html#ac71b90f6450e46638e259666a9fbf762a67964c3b57d6a4fdaed5d93c0c6eacf6", null ],
+      [ "THR1_4", "d1/dc2/classTLI4971.html#ac71b90f6450e46638e259666a9fbf762a63bd6f10a61318c133e1b840563c4958", null ],
+      [ "THR1_5", "d1/dc2/classTLI4971.html#ac71b90f6450e46638e259666a9fbf762a99df316e172fd3b75e00b2949012f1e9", null ],
+      [ "THR1_6", "d1/dc2/classTLI4971.html#ac71b90f6450e46638e259666a9fbf762a42341a313091f6d57a9118cb0a9cd614", null ],
+      [ "THR1_7", "d1/dc2/classTLI4971.html#ac71b90f6450e46638e259666a9fbf762a3579d0c0954209c62eb7dbd190adf4b6", null ],
+      [ "THR1_8", "d1/dc2/classTLI4971.html#ac71b90f6450e46638e259666a9fbf762abdaab0c18ebf239bc3da76081d19982c", null ],
+      [ "THR2_1", "d1/dc2/classTLI4971.html#ac71b90f6450e46638e259666a9fbf762ac82c329c96501346bf6a87a7aee27bd4", null ],
+      [ "THR2_2", "d1/dc2/classTLI4971.html#ac71b90f6450e46638e259666a9fbf762a1bbf5d1999a73b036ca93ddf13b32f61", null ],
+      [ "THR2_3", "d1/dc2/classTLI4971.html#ac71b90f6450e46638e259666a9fbf762a1d574bb8faedd40dd99565470a05e081", null ],
+      [ "THR2_4", "d1/dc2/classTLI4971.html#ac71b90f6450e46638e259666a9fbf762aade5d5c5a205c775c4b175c10387ecd4", null ],
+      [ "THR2_5", "d1/dc2/classTLI4971.html#ac71b90f6450e46638e259666a9fbf762a12e46d67ff90b4cbbe4a86b6b34e6b11", null ],
+      [ "THR2_6", "d1/dc2/classTLI4971.html#ac71b90f6450e46638e259666a9fbf762a8e09ec9798c76d987730be6cd2a910b4", null ],
+      [ "THR2_7", "d1/dc2/classTLI4971.html#ac71b90f6450e46638e259666a9fbf762a08c8d128204220fa071dddc524203f63", null ],
+      [ "THR2_8", "d1/dc2/classTLI4971.html#ac71b90f6450e46638e259666a9fbf762a11cdf848965b765c19651a33b8bda375", null ]
+    ] ],
+    [ "VRefExt", "d1/dc2/classTLI4971.html#a75b442851f940a44d6e2dd2612da408b", [
+      [ "V1_65", "d1/dc2/classTLI4971.html#a75b442851f940a44d6e2dd2612da408bab65690d9eb90adc8155023386511cc40", null ],
+      [ "V1_2", "d1/dc2/classTLI4971.html#a75b442851f940a44d6e2dd2612da408ba3c14d16edc66310ab71fea542c240eae", null ],
+      [ "V1_5", "d1/dc2/classTLI4971.html#a75b442851f940a44d6e2dd2612da408bad6bc72f3bc66ddefa9164204acd6f87b", null ],
+      [ "V1_8", "d1/dc2/classTLI4971.html#a75b442851f940a44d6e2dd2612da408ba77285b8c91294c002aaaeb73cb9f2f41", null ],
+      [ "V2_5", "d1/dc2/classTLI4971.html#a75b442851f940a44d6e2dd2612da408ba6d6b5be8d1542f0238fc1ce0b7cb3ac4", null ]
+    ] ],
+    [ "TLI4971", "d1/dc2/classTLI4971.html#a12529b74f095cc0a5635e1675c2959ac", null ],
+    [ "~TLI4971", "d1/dc2/classTLI4971.html#a39145953e418452177fa30a8f2c2efdd", null ],
+    [ "begin", "d1/dc2/classTLI4971.html#a58bb7aafe8e5e69fb632e2311cd1ed8f", null ],
+    [ "reset", "d1/dc2/classTLI4971.html#a4a5d6fc6f9ba34fab8ba44380d563259", null ],
+    [ "end", "d1/dc2/classTLI4971.html#a489c0e1c2223a25091b42b034075aa60", null ],
+    [ "read", "d1/dc2/classTLI4971.html#a272c5ecf2685e1d565ccb846346f6a02", null ],
+    [ "ocdPolling", "d1/dc2/classTLI4971.html#ab3ba47765c1d02b81399674da2ed5baf", null ],
+    [ "configAdc", "d1/dc2/classTLI4971.html#a64d531499d61a2105c4f94428a58f57d", null ],
+    [ "getLastSwOcdCurrent", "d1/dc2/classTLI4971.html#a4501cff371adf297acd978ba7452969b", null ],
+    [ "registerOcd1Function", "d1/dc2/classTLI4971.html#a07ec1a432ac27aed1f211903d0de7fa8", null ],
+    [ "registerOcd2Function", "d1/dc2/classTLI4971.html#a01644eae09ff5c8989f9790234db9532", null ],
+    [ "registerSwOcdFunction", "d1/dc2/classTLI4971.html#aec6df2292fcbdfd85f793f2d2cf3760d", null ],
+    [ "setMeasRange", "d1/dc2/classTLI4971.html#aee9429f3e47850f60db4ac904667743a", null ],
+    [ "setOpMode", "d1/dc2/classTLI4971.html#aedecbc995a66010ae0bfce3e2a85bef4", null ],
+    [ "configOcd1", "d1/dc2/classTLI4971.html#a482fa95cf4b7f6e0ef58491766a12577", null ],
+    [ "configOcd2", "d1/dc2/classTLI4971.html#aa787580c9ee3da2b58559e30a2872e74", null ],
+    [ "setOcdCompHyst", "d1/dc2/classTLI4971.html#a4d1c9c9c59002c448f5d30bb5bc2b3ba", null ],
+    [ "setSwOcdCompHyst", "d1/dc2/classTLI4971.html#a6f7fdb0abff9181d7ab3939fe38052ac", null ],
+    [ "setVrefExt", "d1/dc2/classTLI4971.html#a26f7c560c4d149a0ecd0db0a22582507", null ],
+    [ "getOcd1State", "d1/dc2/classTLI4971.html#afc191bc45147367d776ac5dd7b091212", null ],
+    [ "getOcd2State", "d1/dc2/classTLI4971.html#a68918230c371039a16e66755951078b0", null ],
+    [ "getSwOcdState", "d1/dc2/classTLI4971.html#a6db6f8c1dda4d08c4207bff8dd105793", null ]
+];

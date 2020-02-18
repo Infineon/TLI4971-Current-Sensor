@@ -1,0 +1,8 @@
+<map id="TLI4971::reset" name="TLI4971::reset">
+<area shape="rect" id="node2" href="$d1/dc2/classTLI4971.html#a489c0e1c2223a25091b42b034075aa60" title="Ends sensor library Turn off sensor supply. " alt="" coords="171,31,274,57"/>
+<area shape="rect" id="node3" href="$d1/dc2/classTLI4971.html#a58bb7aafe8e5e69fb632e2311cd1ed8f" title="Turn on sensor supply, initialy reads sensor configuration and checks if sensor can be configurated..." alt="" coords="165,81,280,108"/>
+<area shape="rect" id="node4" href="$d7/d99/classtli4971_1_1Sici.html#ae52c1ab3bd332ee441f42d3c5ed40498" title="tli4971::Sici::begin" alt="" coords="355,5,493,32"/>
+<area shape="rect" id="node5" href="$d7/d99/classtli4971_1_1Sici.html#a2fe282c7ca4c2c384eed97c8cb24ddff" title="tli4971::Sici::enterSensorIF" alt="" coords="328,56,520,83"/>
+<area shape="rect" id="node6" href="$d7/d99/classtli4971_1_1Sici.html#af9fba059a9f5df9dc4ce2db57d4d473a" title="tli4971::Sici::transfer16" alt="" coords="568,81,737,108"/>
+<area shape="rect" id="node7" href="$d7/d99/classtli4971_1_1Sici.html#a611fc7d6a532b66bc62a2c0d396c8f64" title="tli4971::Sici::end" alt="" coords="361,157,487,184"/>
+</map>
