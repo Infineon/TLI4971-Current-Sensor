@@ -1,6 +1,6 @@
 # TLI4971-Current-Sensor
 
-![Build Status](https://travis-ci.com/Infineon/TLI4971-Current-Sensor.svg?branch=master)
+[![Build Status](https://travis-ci.com/Infineon/TLI4971-Current-Sensor.svg?branch=master)](https://travis-ci.com/Infineon/TLI4971-Current-Sensor)
 
 C++ library of Infineon's **Magnetic Hall TLI4971 Current Sensor**
 
