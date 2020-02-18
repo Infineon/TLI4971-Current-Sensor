@@ -167,7 +167,7 @@ TLI4971-Current-Sensor
 ### Related Repositories
  - [Infineon Github](https://github.com/Infineon)
  - [XMC for Arduino](https://github.com/Infineon/XMC-for-Arduino)
- - [Infineon XMC Platformio](https://github.com/Infineon/platformio-infineonxm)
+ - [Infineon XMC Platformio](https://github.com/Infineon/platformio-infineonxmc)
 
 ### Useful Links
  - [Infineon for Makers](https://www.infineon.com/cms/en/tools/landing/infineon-for-makers/)
