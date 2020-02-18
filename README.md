@@ -63,7 +63,7 @@ The library has been customized for the **TLI4971** modular Shield2Go and the Ar
 <img src="docs/img/tli4971-s2go.png" width="200px">
 
 The complete documentation as schematic and pinout diagram of the boards is included in the **Quick Start Guide**:
-* [TLE4971 S2Go](websitelink) 
+* [TLE4971 S2Go](websitelink) (soon available)
 
 ### Verified Hardware Platforms
 
@@ -90,7 +90,7 @@ Check the [Quick Start Guide](https://www.infineon.com/dgdl/Infineon-quick_start
 
 The library is meant to be directly compatible with any other Arduino UNO platforms. Any new validated hardware platform will be added to the MCU Platforms list above.
 
-For any other custom configuration, please check the specific PCB documentation. The information about the IC components can be found in their respective datasheets [TLI4971](), and the overall Infineon´s [Current Sensors documentation](https://www.infineon.com/cms/en/product/sensor/current-sensors/) on the Infineon website. 
+For any other custom configuration, please check the specific PCB documentation. The information about the IC components can be found in their respective datasheets [TLI4971](https://www.infineon.com/dgdl/Infineon-TLI4971-A120T5-E0001-DataSheet-v01_00-EN.pdf?fileId=5546d462700c0ae6017034d731621b09), and the overall Infineon´s [Current Sensors documentation](https://www.infineon.com/cms/en/product/sensor/current-sensors/) on the Infineon website. 
 
 <a name="sw-req"></a>
 
@@ -157,8 +157,8 @@ TLI4971-Current-Sensor
 
 ### Related Products
 
-* [TLI4971]()
-* [TLI4971 S2Go]()
+* [TLI4971](https://www.infineon.com/cms/en/product/sensor/current-sensors/tli4971-a120t5-e0001/)
+* [TLI4971 S2Go](https://www.infineon.com/cms/en/product/evaluation-boards/s2go_cur-sense_tli4971/)
 * [XMC 2Go](https://www.infineon.com/cms/en/product/evaluation-boards/kit_xmc_2go_xmc1100_v1/) 
 * [XMC1100 Boot Kit](https://www.infineon.com/cms/en/product/evaluation-boards/kit_xmc11_boot_001/#ispnTab1) 
 * [XMC4700 Relax Kit for 5V Shields](https://www.infineon.com/cms/en/product/evaluation-boards/kit_xmc47_relax_5v_ad_v1/) 
