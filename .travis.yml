@@ -16,6 +16,7 @@ branches:
 
 env: 
   - PLATFORMIO_CI_SRC=examples/avgCurrent
+  - PLATFORMIO_CI_SRC=examples/avgCurrent
 
 install: 
   - pip install -U platformio==4.1.0
