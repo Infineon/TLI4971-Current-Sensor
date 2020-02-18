@@ -1,8 +1,10 @@
-cilanguage: python
+language: python
 python:
-    - "2.7"
+    - 3.7
 
 sudo: required
+
+cache: pip
         
 branches:
     - master
@@ -17,4 +19,4 @@ install:
     - platformio platform install -f atmelavr
 
 script:
-    - platformio ci --lib="." --board=xmc1100_xmc2go --board=xmc1100_boot_kit --board=xmc4700_relax_kit --project-option="lib_deps=Wire" 
+    - platformio ci --lib="." --board=xmc1100_xmc2go --board=xmc1100_boot_kit --board=xmc4700_relax_kit --boards=uno --project-option="lib_deps=OneWire" 
