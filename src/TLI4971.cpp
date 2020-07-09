@@ -616,6 +616,56 @@ bool TLI4971::setVrefExt(int vrefExtVoltage)
 }
 
 /**
+ * @brief       If this is enabled the sensitivity is ratio-metric to VDD respective to VREF in single-ended mode. Default is disabled.
+ * 
+ * @param[in]   enable	true: ratio-metric gain is enabled
+				false: ratio-metric gain is disabled
+ *                                
+ * @return      bool
+ * @retval      true if configuration succeeded
+ * @retval      false if configuration failed
+ */
+bool TLI4971::setRatioGain(bool enable)
+{
+  uint16_t configBackup = configRegs[2];
+  if(enable)
+	configRegs[2] |= 0x4000;
+  else
+	configRegs[2] &= 0xBFFF;
+  if(sendConfig())
+  {
+    return true;
+  }
+  configRegs[2] = configBackup;
+  return false;
+}
+
+/**
+ * @brief       If this is enabled the ratio-metric offset behavior of the quiescent voltage is activated. Default is disabled.
+ * 
+ * @param[in]   enable	true: ratio-metric offset is enabled
+				false: ratio-metric offset is disabled
+ *                                
+ * @return      bool
+ * @retval      true if configuration succeeded
+ * @retval      false if configuration failed
+ */
+bool TLI4971::setRatioOff(bool enable)
+{
+  uint16_t configBackup = configRegs[2];
+  if(enable)
+	configRegs[2] |= 0x8000;
+  else
+	configRegs[2] &= 0x7FFF;
+  if(sendConfig())
+  {
+    return true;
+  }
+  configRegs[2] = configBackup;
+  return false;
+}
+
+/**
  * @brief     Sends the configuration to the sensor.
  *                                
  * @return    bool
