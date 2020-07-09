@@ -52,6 +52,8 @@ class TLI4971
     bool setOcdCompHyst(int threshold);
     bool setSwOcdCompHyst(double hysterese);
     bool setVrefExt(int vrefExtVoltage);
+	bool setRatioGain(bool enable);
+	bool setRatioOff(bool enable);
 
     bool getOcd1State(void);
     bool getOcd2State(void);
