@@ -236,7 +236,7 @@ bool TLI4971::getSwOcdState()
 void TLI4971::configAdc(bool logicLevel5V, int adcResolution = -1)
 {
   ll5V = logicLevel5V;
-#ifdef ADC_RESOLUTION || ADC_MAX_READ_RESOLUTION
+#if defined(ADC_RESOLUTION) || defined(ADC_MAX_READ_RESOLUTION)
   if(adcResolution > 0)
   {
 	  adcResol = adcResolution;
