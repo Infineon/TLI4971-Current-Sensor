@@ -46,7 +46,7 @@
  * 
  * @return          void         
  */
-TLI4971::TLI4971(int aout, int vref, int pwr, int sici, int ocd1, int ocd2, int mux, bool mc5V = true)
+TLI4971::TLI4971(int aout, int vref, int pwr, int sici, int ocd1, int ocd2, int mux, bool mc5V)
 {
   ocd1Pin = ocd1;
   ocd2Pin = ocd2;
@@ -233,7 +233,7 @@ bool TLI4971::getSwOcdState()
  * 
  * @return      void
  */
-void TLI4971::configAdc(bool logicLevel5V, int adcResolution = -1)
+void TLI4971::configAdc(bool logicLevel5V, int adcResolution)
 {
   ll5V = logicLevel5V;
 #if defined(ADC_RESOLUTION) || defined(ADC_MAX_READ_RESOLUTION)
