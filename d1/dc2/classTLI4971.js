@@ -81,6 +81,8 @@ var classTLI4971 =
     [ "setOcdCompHyst", "d1/dc2/classTLI4971.html#a4d1c9c9c59002c448f5d30bb5bc2b3ba", null ],
     [ "setSwOcdCompHyst", "d1/dc2/classTLI4971.html#a6f7fdb0abff9181d7ab3939fe38052ac", null ],
     [ "setVrefExt", "d1/dc2/classTLI4971.html#a26f7c560c4d149a0ecd0db0a22582507", null ],
+    [ "setRatioGain", "d1/dc2/classTLI4971.html#a5acc82f65b8900e2518f511127117326", null ],
+    [ "setRatioOff", "d1/dc2/classTLI4971.html#a770d8a181c0ec497f42fb94abda63438", null ],
     [ "getOcd1State", "d1/dc2/classTLI4971.html#afc191bc45147367d776ac5dd7b091212", null ],
     [ "getOcd2State", "d1/dc2/classTLI4971.html#a68918230c371039a16e66755951078b0", null ],
     [ "getSwOcdState", "d1/dc2/classTLI4971.html#a6db6f8c1dda4d08c4207bff8dd105793", null ]
