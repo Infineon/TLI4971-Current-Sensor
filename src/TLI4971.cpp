@@ -46,7 +46,7 @@
  * 
  * @return          void         
  */
-TLI4971::TLI4971(int aout, int vref, int pwr, int sici, int ocd1, int ocd2, int mux, bool mc5V = true)
+TLI4971::TLI4971(int aout, int vref, int pwr, int sici, int ocd1, int ocd2, int mux, bool mc5V)
 {
   ocd1Pin = ocd1;
   ocd2Pin = ocd2;
@@ -233,10 +233,10 @@ bool TLI4971::getSwOcdState()
  * 
  * @return      void
  */
-void TLI4971::configAdc(bool logicLevel5V, int adcResolution = -1)
+void TLI4971::configAdc(bool logicLevel5V, int adcResolution)
 {
   ll5V = logicLevel5V;
-#ifdef ADC_RESOLUTION || ADC_MAX_READ_RESOLUTION
+#if defined(ADC_RESOLUTION) || defined(ADC_MAX_READ_RESOLUTION)
   if(adcResolution > 0)
   {
 	  adcResol = adcResolution;
@@ -609,6 +609,56 @@ bool TLI4971::setVrefExt(int vrefExtVoltage)
   if(sendConfig())
   {
     vrefExt = vrefExtVoltage;
+    return true;
+  }
+  configRegs[2] = configBackup;
+  return false;
+}
+
+/**
+ * @brief       If this is enabled the sensitivity is ratio-metric to VDD respective to VREF in single-ended mode. Default is disabled.
+ * 
+ * @param[in]   enable	true: ratio-metric gain is enabled
+				false: ratio-metric gain is disabled
+ *                                
+ * @return      bool
+ * @retval      true if configuration succeeded
+ * @retval      false if configuration failed
+ */
+bool TLI4971::setRatioGain(bool enable)
+{
+  uint16_t configBackup = configRegs[2];
+  if(enable)
+	configRegs[2] |= 0x4000;
+  else
+	configRegs[2] &= 0xBFFF;
+  if(sendConfig())
+  {
+    return true;
+  }
+  configRegs[2] = configBackup;
+  return false;
+}
+
+/**
+ * @brief       If this is enabled the ratio-metric offset behavior of the quiescent voltage is activated. Default is disabled.
+ * 
+ * @param[in]   enable	true: ratio-metric offset is enabled
+				false: ratio-metric offset is disabled
+ *                                
+ * @return      bool
+ * @retval      true if configuration succeeded
+ * @retval      false if configuration failed
+ */
+bool TLI4971::setRatioOff(bool enable)
+{
+  uint16_t configBackup = configRegs[2];
+  if(enable)
+	configRegs[2] |= 0x8000;
+  else
+	configRegs[2] &= 0x7FFF;
+  if(sendConfig())
+  {
     return true;
   }
   configRegs[2] = configBackup;
