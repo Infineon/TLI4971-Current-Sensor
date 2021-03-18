@@ -12,7 +12,7 @@
      "name": "Infineon Technologies AG",
      "url": "https://www.infineon.com/cms/en/product/sensor/magnetic-current-sensor/"
    },
-   "version":"1.1.1",
+   "version":"1.1.2",
    "license":"MIT",
    "frameworks":"arduino",
    "platforms":[  
