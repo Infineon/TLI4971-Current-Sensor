@@ -63,7 +63,7 @@ The library has been customized for the **TLI4971** modular Shield2Go and the Ar
 <img src="docs/img/tli4971-s2go.png" width="200px">
 
 The complete documentation as schematic and pinout diagram of the boards is included in the **Quick Start Guide**:
-* [TLE4971 S2Go](websitelink) (soon available)
+* [TLE4971 S2Go](https://www.infineon.com/dgdl/Infineon-TLI4971_S2Go_Arduino_Quick_Start-GettingStarted-v01_00-EN.pdf?fileId=5546d46270c4f93e0170f36156157dfc) 
 
 ### Verified Hardware Platforms
 
