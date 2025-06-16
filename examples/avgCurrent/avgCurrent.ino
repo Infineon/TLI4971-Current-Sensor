@@ -7,7 +7,7 @@
   TLI4971 CurrentSensor = TLI4971(A0, A1, 9, 5, 2, 10, 20, false);  
 #else
   TLI4971 CurrentSensor = TLI4971(A0, A1, 9, 5, 2, 10, 20, true);
-  #define NOT_AN_INTERRUPT -1
+  
 #endif
 
 void setup() {
