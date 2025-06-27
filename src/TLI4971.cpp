@@ -31,6 +31,9 @@
 #define mapHystThrS5(thr) (thr<8)?0x4+thr-(int)((thr+1)/2):0x3+(thr-8)-(int)((thr-5)/4)
 #define mapHystThrS6(thr) (thr<8)?0x2+(int)((thr+1)/3):0x2+(int)((thr-8)/2)
 
+#ifndef NOT_AN_INTERRUPT
+  #define NOT_AN_INTERRUPT -1
+#endif
 
 /**
  * @brief           Current sensor instance constructor
