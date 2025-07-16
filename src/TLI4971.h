@@ -83,7 +83,7 @@ class TLI4971
 
     bool ll5V = true;
 #ifdef ADC_RESOLUTION
-	int adcResol = ADC_RESOLUTION //if possible: highest possible resolution
+	int adcResol = ADC_RESOLUTION; //if possible: highest possible resolution
 #else
     int adcResol = 10;	//standard for Arduino UNO
 #endif
