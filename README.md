@@ -1,7 +1,7 @@
 # TLI4971-Current-Sensor
 
 [![Compile examples](https://github.com/Infineon/TLI4971-Current-Sensor/actions/workflows/compile_examples.yml/badge.svg)](https://github.com/Infineon/TLI4971-Current-Sensor/actions/workflows/compile_examples.yml)
-[![Check links](https://github.com/Infineon/XMC-for-Arduino/actions/workflows/check_links.yml/badge.svg)](https://github.com/Infineon/XMC-for-Arduino/actions/workflows/check_links.yml)
+[![Check links](https://github.com/Infineon/TLI4971-Current-Sensor/actions/workflows/check_links.yml/badge.svg)](https://github.com/Infineon/TLI4971-Current-Sensor/actions/workflows/check_links.yml)
 
 C++ library of Infineon's **Magnetic Hall TLI4971 Current Sensor**
 
